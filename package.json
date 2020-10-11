@@ -1,0 +1,28 @@
+{
+  "name": "project-template",
+  "description": "Project Template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdarida/project-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rdarida/project-template/issues"
+  },
+  "author": "Róbert Darida",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "npx husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "npm run format"
+    }
+  }
+}
