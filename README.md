@@ -1,11 +1,34 @@
-![Dependencies](https://david-dm.org/rdarida/project-template.svg)
+![Dependencies](https://david-dm.org/rdarida/simple-github-pages-deploy-action.svg)
 
-# Project Template
+# Simple GitHub Pages Deploy Action
 
-Kick off your project with this template.
+## Usage
+```yml
+name: Website deployment to gh-pages
 
-## Project setup
-Rename all the occurrance of **"project-template"** and **"Project Template"** in the project before run `npm install`.
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install and build
+        uses: 
+
+      - name: Deploy
+        uses: rdarida/simple-simple-github-pages-deploy-action@v1
+        with:
+          git-user: '<your GitHub username>'
+          git-email: '<your email address>'
+          git-base-folder: '<output folder of your build>'
+          commit-message: '<your commit message>'
+```
 
 ## Available Scripts
 
@@ -28,6 +51,7 @@ A quick look at the top-level files and directories.
     ├── .gitignore
     ├── .prettierignore
     ├── .prettierrc
+    ├── action.yml
     ├── LICENSE
     ├── package.json
     ├── package-lock.json
@@ -45,10 +69,12 @@ A quick look at the top-level files and directories.
 
 6. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-7. **`LICENSE`**: This template is licensed under the MIT license.
+7. **`action.yml`**: TBD
 
-8. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+8. **`LICENSE`**: This template is licensed under the MIT license.
 
-9. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+9. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-10. **`README.md`**: A text file containing useful reference information about your project.
+10. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+11. **`README.md`**: A text file containing useful reference information about your project.

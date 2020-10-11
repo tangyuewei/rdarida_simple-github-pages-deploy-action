@@ -1,0 +1,39 @@
+name: 'Simple Simple GitHub Pages Deploy Action'
+description: 'Deploys a given folder to gh-pages branch with git'
+author: 'rdarida'
+
+inputs:
+  git-user:
+    description: 'Set git config user.name'
+    required: true
+    default: 'github-action'
+  git-email:
+    description: 'Set git config user.email'
+    required: true
+    default: 'github-action@github.com'
+  git-base-folder:
+    description: 'Set the base folder for deploy'
+    require: true
+    default: 'dist'
+  commit-message:
+    description: 'Set the commit message'
+    require: true
+    default: 'Automatic Simple GitHub Pages Deploy Action'
+
+runs:
+  using: 'composite'
+  steps:
+    - run: git config user.name ${{ inputs.git-user }}
+      shell: bash
+
+    - run: git config user.email ${{ inputs.git-email }}
+      shell: bash
+
+    - run: git --work-tree ${{ inputs.git-base-folder }} add --all
+      shell: bash
+
+    - run: git commit -m ${{ inputs.commit-message }}
+      shell: bash
+
+    - run: git push origin HEAD:gh-pages --force
+      shell: bash

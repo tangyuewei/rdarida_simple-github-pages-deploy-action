@@ -1,19 +1,19 @@
 {
-  "name": "project-template",
-  "description": "Project Template",
+  "name": "simple-github-pages-deploy-action",
+  "description": "Simple GitHub Pages Deploy Action",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rdarida/project-template.git"
+    "url": "git+https://github.com/rdarida/simple-github-pages-deploy-action.git"
   },
   "bugs": {
-    "url": "https://github.com/rdarida/project-template/issues"
+    "url": "https://github.com/rdarida/simple-github-pages-deploy-action/issues"
   },
   "author": "Róbert Darida",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "postinstall": "npx husky install",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,yml,yaml}\""
   },
   "dependencies": {},
   "devDependencies": {
