@@ -24,7 +24,7 @@ jobs:
 
       - name: Simple deploy with git
         uses: rdarida/simple-github-pages-deploy-action@v1
-        with:
+        with: # optional
           git-user: '<your GitHub username>'
           git-email: '<your email address>'
           git-base-folder: '<output folder of your build>'
