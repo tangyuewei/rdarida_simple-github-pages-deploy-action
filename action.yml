@@ -1,5 +1,5 @@
-name: 'Simple Simple GitHub Pages Deploy Action'
-description: 'Deploys a given folder to gh-pages branch with git'
+name: 'Simple GitHub Pages Deploy Action'
+description: 'Deploys a given folder to gh-pages branch with git.'
 author: 'rdarida'
 
 branding:
