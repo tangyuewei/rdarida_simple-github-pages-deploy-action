@@ -5,7 +5,7 @@ Deploys a given folder to gh-pages branch with git.
 
 ## Usage
 ```yml
-name: Website deployment to gh-pages
+name: Deploy to gh-pages
 
 on:
   push:
