@@ -22,7 +22,7 @@ jobs:
         uses: 
 
       - name: Deploy
-        uses: rdarida/simple-simple-github-pages-deploy-action@v1
+        uses: rdarida/simple-github-pages-deploy-action@v1
         with:
           git-user: '<your GitHub username>'
           git-email: '<your email address>'
