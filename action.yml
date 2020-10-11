@@ -36,7 +36,7 @@ runs:
     - run: git --work-tree ${{ inputs.git-base-folder }} add --all
       shell: bash
 
-    - run: git commit -m ${{ inputs.commit-message }}
+    - run: git commit -m "${{ inputs.commit-message }}"
       shell: bash
 
     - run: git push origin HEAD:${{ inputs.branch }} --force
