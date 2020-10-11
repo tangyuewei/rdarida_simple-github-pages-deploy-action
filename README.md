@@ -16,11 +16,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Install and build
-        uses: 
+        run: |
+          npm install
+          npm run build
 
       - name: Simple deploy with git
         uses: rdarida/simple-github-pages-deploy-action@v1
@@ -29,6 +31,7 @@ jobs:
           git-email: '<your email address>'
           git-base-folder: '<output folder of your build>'
           commit-message: '<your commit message>'
+          branch: '<target branch for deployment>'
 ```
 
 ## Available Scripts

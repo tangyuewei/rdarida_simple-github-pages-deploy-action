@@ -19,6 +19,10 @@ inputs:
     description: 'Set the commit message'
     require: true
     default: 'Automatic Simple GitHub Pages Deploy Action'
+  branch:
+    description: 'Set the target branch for deployment'
+    require: true
+    default: 'gh-pages'
 
 runs:
   using: 'composite'
@@ -35,5 +39,5 @@ runs:
     - run: git commit -m ${{ inputs.commit-message }}
       shell: bash
 
-    - run: git push origin HEAD:gh-pages --force
+    - run: git push origin HEAD:${{ inputs.branch }} --force
       shell: bash
