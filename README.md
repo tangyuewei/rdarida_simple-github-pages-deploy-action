@@ -38,7 +38,7 @@ In the project directory, you can run:
 Runs right after `npm install`, and sets up [husky](https://typicode.github.io/husky/#/)
 
 ### `format`
-Runs Prettier and formats all the **\*.js**, **\*.jsx**, **\*.ts**, **\*.tsx**, and **\*.json** files.
+Runs Prettier and formats all the **\*.js**, **\*.json**, **\*.yml**, and **\*.yaml** files.
 
 ## What's inside?
 
@@ -69,7 +69,7 @@ A quick look at the top-level files and directories.
 
 6. **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-7. **`action.yml`**: TBD
+7. **`action.yml`**: Contains the Simple GitHub Pages Deploy Action.
 
 8. **`LICENSE`**: This template is licensed under the MIT license.
 

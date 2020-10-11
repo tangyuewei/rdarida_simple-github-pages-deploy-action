@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "npx husky install",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,yml,yaml}\""
+    "format": "prettier --write \"**/*.{js,json,yml,yaml}\""
   },
   "dependencies": {},
   "devDependencies": {
