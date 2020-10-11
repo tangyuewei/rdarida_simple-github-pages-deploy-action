@@ -1,6 +1,7 @@
 ![Dependencies](https://david-dm.org/rdarida/simple-github-pages-deploy-action.svg)
 
 # Simple GitHub Pages Deploy Action
+Deploys a given folder to gh-pages branch with git.
 
 ## Usage
 ```yml
