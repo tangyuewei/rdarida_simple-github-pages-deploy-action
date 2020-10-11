@@ -3,7 +3,7 @@ description: 'Deploys a given folder to gh-pages branch with git.'
 author: 'rdarida'
 
 branding:
-  icon: 'cast'
+  icon: 'upload'
   color: 'gray-dark'
 
 inputs:
