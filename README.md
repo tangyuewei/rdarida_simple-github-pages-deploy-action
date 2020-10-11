@@ -21,7 +21,7 @@ jobs:
       - name: Install and build
         uses: 
 
-      - name: Deploy
+      - name: Simple deploy with git
         uses: rdarida/simple-github-pages-deploy-action@v1
         with:
           git-user: '<your GitHub username>'
