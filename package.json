@@ -18,12 +18,15 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "husky": "^4.3.0",
     "prettier": "^2.1.2",
     "standard-version": "^9.0.0"
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "post-commit": "npm run format"
     }
   }
