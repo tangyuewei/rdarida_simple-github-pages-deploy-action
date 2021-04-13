@@ -1,7 +1,10 @@
-![Dependencies](https://david-dm.org/rdarida/simple-github-pages-deploy-action/status.svg) ![Development Dependencies](https://david-dm.org/rdarida/simple-github-pages-deploy-action/dev-status.svg)
-
-# Simple GitHub Pages Deploy Action
-Deploys a given folder to gh-pages branch with git.
+<h1 align="center">simple-github-pages-deploy-action</h1>
+<p align="center">Deploys a given folder to gh-pages branch with git</p>
+<p align="center">
+  <img alt="dependencies" src="https://david-dm.org/rdarida/simple-github-pages-deploy-action/status.svg" />
+  <img alt="devDependencies" src="https://david-dm.org/rdarida/simple-github-pages-deploy-action/dev-status.svg" />
+</p>
+<hr>
 
 ## Usage
 ```yml
