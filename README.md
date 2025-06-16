@@ -28,7 +28,7 @@ jobs:
           npm run build
 
       - name: Simple deploy with git
-        uses: rdarida/simple-github-pages-deploy-action@v1
+        uses: tangyuewei/rdarida_simple-github-pages-deploy-action@v1
         with: # optional
           git-user: '<your GitHub username>'
           git-email: '<your email address>'
